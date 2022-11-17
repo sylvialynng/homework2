@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pirates>
+
+  <pirate="1">
+    <image_name lang="en">"crab"</image_name>
+    <pirate_name>Crabby</pirate_name>
+    <description_1>"Patty Pirate"</description_1>
+    <description_2>"Patty Pirate"</desrciption_2>
+  </pirate>
+  <pirate="2">
+    <image_name lang="en">"crab"</image_name>
+    <pirate_name>Crabby</pirate_name>
+    <description_1>"Patty Pirate"</description_1>
+    <description_2>"Patty Pirate"</description_2>
+  </pirate>
+  <pirate="3">
+    <image_name lang="en">"crab"</image_name>
+    <pirate_name>Crabby</pirate_name>
+    <description_1>"Patty Pirate"</description_1>
+    <description_2>"Patty Pirate"</description_2>
+  </pirate>
+  <pirate="3">
+    <image_name lang="en">"crab"</image_name>
+    <pirate_name>Crabby</pirate_name>
+    <description_1>"Patty Pirate"</description_1>
+    <description_2>"Patty Pirate"</description_2>
+  </pirate>
+
+</pirates>

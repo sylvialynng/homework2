@@ -2,12 +2,12 @@
 //  AppDelegate.swift
 //  HomeWorkBasicApp
 //
-//  Created by Consultant on 11/13/22.
+//  Created by Sylvia Graham on 11/13/22.
 //
-
 import UIKit
 
-@main
+//@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
