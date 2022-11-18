@@ -4,11 +4,19 @@
 //
 //  Created by Consultant on 11/13/22.
 //
-
 import UIKit
 
 class HomeWorkTableViewCell: UITableViewCell {
+    var imageName = " "
+    var label1 = " "
+    var label2 = " "
     
+    func configure(imageName: String, label1: String, label2: String){
+        self.imageName = imageName
+        self.label1 = label1
+        self.label2 = label2
+        setUpUI()
+    }
     
     //setting to a closure which is unique to lazy ={}()
     //contents inside {} is the initialization block
@@ -17,7 +25,8 @@ class HomeWorkTableViewCell: UITableViewCell {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.backgroundColor = .systemPink
         imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage(named: "crab")
+        imageView.image = UIImage(named: self.imageName)
+
         self.imageView?.heightAnchor.constraint(equalToConstant: 75).isActive = true
         self.imageView?.widthAnchor.constraint(equalToConstant: 75).isActive = true
         return imageView
@@ -26,7 +35,7 @@ class HomeWorkTableViewCell: UITableViewCell {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.backgroundColor = .systemYellow
-        label.text = "Crabby"
+        label.text = self.imageName
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints  = false
         
@@ -36,7 +45,7 @@ class HomeWorkTableViewCell: UITableViewCell {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.backgroundColor = .systemOrange
-        label.text = "Patty Pirate"
+        label.text = self.label1
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints  = false
         
@@ -46,7 +55,7 @@ class HomeWorkTableViewCell: UITableViewCell {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.backgroundColor = .systemMint
-        label.text = "says 'ARG'"
+        label.text = self.label2
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints  = false
         
@@ -88,14 +97,13 @@ class HomeWorkTableViewCell: UITableViewCell {
         stackView.leadingAnchor.constraint(equalTo: self.HomeWorkImageView.trailingAnchor, constant: 8).isActive = true
         stackView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -8).isActive = true
         //stackView.addArrangedSubview(bufferViewBottom)
-
        // stackView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -8).isActive = true
         
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setUpUI()
+        //setUpUI()
     }
     
     //So it knows we're not looking for XML file
@@ -108,10 +116,8 @@ class HomeWorkTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
      */
